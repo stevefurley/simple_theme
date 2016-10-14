@@ -2,11 +2,12 @@
 // Website or App Stylesheet
 // ==========================================================================
 
-// Variables and Colors
-@import "styles/variables-colors";
 
 // Import Base
 @import "base";
+
+// Import Base
+@import "fonts/fonts";
 
 // Website / App Styles
 @import "styles/header";
