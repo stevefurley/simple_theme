@@ -1,1 +1,32 @@
 // Header
+header,
+footer {
+  a {
+    text-decoration: none;
+  }
+}
+.c3 {
+  background: purple;
+}
+#header-menu {
+  margin-top: 30px;
+  margin-right: -7px;
+  ul {
+    padding: 0;
+    margin: 0;
+    li {
+      display: inline-block;
+      margin-right: -5px;
+      a {
+        padding: $grid-gutter/2 $grid-gutter;
+        background: blue;
+        color: white;
+        margin: 0 7px;
+        display: block;
+        &:hover {
+          @extend .c3;
+        }
+      }
+    }
+  }
+}

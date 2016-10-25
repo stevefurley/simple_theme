@@ -1,5 +1,5 @@
 <?php
-add_action( 'after_setup_theme', 'blankslate_setup' );
+
 function blankslate_setup(){
   // Add Menu Support
   add_theme_support('menus');
@@ -11,6 +11,7 @@ function blankslate_setup(){
   add_image_size('large', 1024, '', true); // Large Thumbnail
   add_image_size('medium', 768, '', true); // Medium Thumbnail
   add_image_size('small', 480, '', true); // Small Thumbnail
+  add_image_size('slider', 1090, 613, true); // Small Thumbnail
   add_theme_support( 'title-tag' );
 
   register_nav_menus(array( // Using array to specify more menus if needed
@@ -53,7 +54,7 @@ function debug($data) {
 
 if (!isset($content_width))
 {
-  $content_width = 900;
+  $content_width = 1600;
 }
 
 /*------------------------------------*\
@@ -244,7 +245,7 @@ Actions + Filters + ShortCodes
 // Add Actions
 
 
-
+add_action( 'after_setup_theme', 'blankslate_setup' );
 
 add_action('init', 'blankslate_pagination'); // Add our blankslate Pagination
 
@@ -273,7 +274,7 @@ add_filter('wp_nav_menu_args', 'my_wp_nav_menu_args'); // Remove surrounding <di
 add_filter('the_category', 'remove_category_rel_from_category_list'); // Remove invalid rel attribute
 add_filter('the_excerpt', 'shortcode_unautop'); // Remove auto <p> tags in Excerpt (Manual Excerpts only)
 add_filter('the_excerpt', 'do_shortcode'); // Allows Shortcodes to be executed in Excerpt (Manual Excerpts only)
-add_filter('show_admin_bar', 'remove_admin_bar'); // Remove Admin bar
+//add_filter('show_admin_bar', 'remove_admin_bar'); // Remove Admin bar
 add_filter('post_thumbnail_html', 'remove_thumbnail_dimensions', 10); // Remove width and height dynamic attributes to thumbnails
 add_filter('image_send_to_editor', 'remove_thumbnail_dimensions', 10); // Remove width and height dynamic attributes to post images
 add_filter('add_sidebar_class', 'add_sidebar_class');
@@ -305,6 +306,7 @@ $blank_includes = [
 
 ];
 
+//depicts where templates are found
 foreach ($blank_includes as $file) {
   if (!$filepath = locate_template($file)) {
     trigger_error(sprintf(__('Error locating %s for inclusion', 'blankslate'), $file), E_USER_ERROR);
@@ -313,6 +315,7 @@ foreach ($blank_includes as $file) {
   require_once $filepath;
 } unset($file, $filepath);
 
+//sets if full width or contained users choice
 function pageWidth() {
   $full_width_or_fixed = get_field('full_width_or_fixed', 'option');
   echo $full_width_or_fixed;
