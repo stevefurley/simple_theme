@@ -39,19 +39,27 @@
 
 <body <?php body_class(); ?> class='c1'>
   <!-- body wrapper -->
-  <div id="wrapper" class="<?php pageWidth(); ?> no-padding">
 
-    <header id="header" role="banner" class=' c2 island-half overflow'>
+  <div id="wrapper" class="<?php pageWidth(); ?> no-padding">
+      <!-- mobile menu -->
+    <nav role="navigation" class='mobile-menu nav-off-canvas-right'>
+    <?php wp_nav_menu( array( 'theme_location' => 'mobile-menu' ) ); ?>
+    </nav>
+
+    <header id="header" role="banner" class=' c2 island-half overflow move'>
       <div class='container'>
         <section id="branding" class='left'>
           <i class="fa fa-blind" aria-hidden="true"></i>
           <div id="site-title"><?php if ( is_front_page() || is_home() || is_front_page() && is_home() ) { echo '<h1>'; } ?><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_html( get_bloginfo( 'name' ) ); ?>" rel="home"><?php echo esc_html( get_bloginfo( 'name' ) ); ?></a><?php if ( is_front_page() || is_home() || is_front_page() && is_home() ) { echo '</h1>'; } ?></div>
           <div id="site-description"><?php bloginfo( 'description' ); ?></div>
         </section>
+        <div class=" block none-m no-padding island right">
+          <div id="mobile-menu-button" class="hamburger"><span></span></div>
+        </div>
         <nav id="header-menu" role="navigation" class='none block-m right-m'>
           <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
         </nav>
       </div>
     </header>
 
-    <div id="container" class=' clear '>
+    <div id="container" class=' clear move'>

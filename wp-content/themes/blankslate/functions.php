@@ -16,24 +16,11 @@ function blankslate_setup(){
 
   register_nav_menus(array( // Using array to specify more menus if needed
     'header-menu' => __('Header Menu', 'blankslate'), // Main Navigation
-    'sidebar-menu' => __('Sidebar Menu', 'blankslate'), // Sidebar Navigation
+    'mobile-menu' => __('Mobile Menu', 'blankslate'), // Sidebar Navigation
     'footer-menu' => __('Footer Menu', 'blankslate') // Extra Navigation if needed (duplicate as many as you need!)
   ));
 }
 
-
-add_action( 'widgets_init', 'blankslate_widgets_init' );
-function blankslate_widgets_init()
-{
-  register_sidebar( array (
-  'name' => __( 'Sidebar Widget Area', 'blankslate' ),
-  'id' => 'primary-widget-area',
-  'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
-  'after_widget' => "</li>",
-  'before_title' => '<h3 class="widget-title">',
-  'after_title' => '</h3>',
-  ) );
-}
 
 
 
@@ -320,3 +307,19 @@ function pageWidth() {
   $full_width_or_fixed = get_field('full_width_or_fixed', 'option');
   echo $full_width_or_fixed;
 }
+
+
+
+function films_pre_get_posts( $query ) {
+    // Test for category archive index
+    // and ensure that the query is the main query
+    // and not a secondary query (such as a nav menu
+    // or recent posts widget output, etc.
+
+    if ( is_archive() && $query->is_main_query()  && is_tax('film_category')) {
+        // Modify posts per page
+        $query->set( 'posts_per_page', 18 );
+
+    }
+}
+add_action( 'pre_get_posts', 'films_pre_get_posts' );
