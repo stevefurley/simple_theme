@@ -1,0 +1,946 @@
+[
+    {
+        "key": "group_56dd890eef910",
+        "title": "Contact Details Options",
+        "fields": [
+            {
+                "key": "field_56dd891ddff2a",
+                "label": "Contact Telephone",
+                "name": "contact_telephone",
+                "type": "number",
+                "instructions": "Enter contact telephone. Used throughout the website.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "min": "",
+                "max": "",
+                "step": "",
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_56dd89ecdff2b",
+                "label": "Contact Email",
+                "name": "contact_email",
+                "type": "email",
+                "instructions": "Enter contact email address. Used throughout the website.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_56dd8a35dff2c",
+                "label": "Street Address 1",
+                "name": "street_address_1",
+                "type": "text",
+                "instructions": "1st line of address",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": "",
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_56dd8baedff2d",
+                "label": "Street Address 2",
+                "name": "street_address_2",
+                "type": "text",
+                "instructions": "2nd line of address",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": "",
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_56dd8bbedff2e",
+                "label": "Town\/City",
+                "name": "town_city",
+                "type": "text",
+                "instructions": "Town or City",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": "",
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_56dd8be1dff30",
+                "label": "Postcode",
+                "name": "postcode",
+                "type": "text",
+                "instructions": "Enter your postcode",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": "",
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_56dd8bf5dff31",
+                "label": "Country",
+                "name": "country",
+                "type": "text",
+                "instructions": "Enter your Country (eg: UK)",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": "",
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_57fd0b8168dba",
+                "label": "Location Map",
+                "name": "location_map",
+                "type": "google_map",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "center_lat": "",
+                "center_lng": "",
+                "zoom": "",
+                "height": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "options_page",
+                    "operator": "==",
+                    "value": "acf-options-contact"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": ""
+    },
+    {
+        "key": "group_56ec264ba8ed8",
+        "title": "Protected Name",
+        "fields": [
+            {
+                "key": "field_56ec26621e273",
+                "label": "Protected Name",
+                "name": "protected_name",
+                "type": "text",
+                "instructions": "The protected name given to harden templating",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": "",
+                "readonly": 0,
+                "disabled": 0
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page",
+                    "operator": "==",
+                    "value": "2"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "side",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": ""
+    },
+    {
+        "key": "group_5797735282b0b",
+        "title": "Remove sidebars from post type",
+        "fields": [
+            {
+                "key": "field_5797736850487",
+                "label": "Remove left sidebar",
+                "name": "remove_left_sidebar_global",
+                "type": "checkbox",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "post": "post",
+                    "page": "page",
+                    "attachment": "attachment",
+                    "revision": "revision",
+                    "nav_menu_item": "nav_menu_item",
+                    "tinymcetemplates": "tinymcetemplates",
+                    "acf-field-group": "acf-field-group",
+                    "acf-field": "acf-field",
+                    "sectors": "sectors",
+                    "experiences": "experiences",
+                    "focus_area": "focus_area",
+                    "facts": "facts",
+                    "lawyers": "lawyers",
+                    "insights": "insights",
+                    "locations": "locations",
+                    "services": "services",
+                    "news": "news",
+                    "events": "events",
+                    "location_office": "location_office",
+                    "sub_services": "sub_services",
+                    "features": "features",
+                    "campaign": "campaign",
+                    "careers_location": "careers_location",
+                    "careers_sections": "careers_sections",
+                    "careers_office": "careers_office",
+                    "careers_job_listing": "careers_job_listing",
+                    "careers_job": "careers_job",
+                    "recruitment_epv": "recruitment_epv"
+                },
+                "default_value": [],
+                "layout": "horizontal",
+                "toggle": 1,
+                "return_format": "value"
+            },
+            {
+                "key": "field_5797743eb31ac",
+                "label": "Remove right sidebar",
+                "name": "remove_right_sidebar_global",
+                "type": "checkbox",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "post": "post",
+                    "page": "page",
+                    "attachment": "attachment",
+                    "revision": "revision",
+                    "nav_menu_item": "nav_menu_item",
+                    "tinymcetemplates": "tinymcetemplates",
+                    "acf-field-group": "acf-field-group",
+                    "acf-field": "acf-field",
+                    "sectors": "sectors",
+                    "experiences": "experiences",
+                    "focus_area": "focus_area",
+                    "facts": "facts",
+                    "lawyers": "lawyers",
+                    "insights": "insights",
+                    "locations": "locations",
+                    "services": "services",
+                    "news": "news",
+                    "events": "events",
+                    "location_office": "location_office",
+                    "sub_services": "sub_services",
+                    "features": "features",
+                    "campaign": "campaign",
+                    "careers_location": "careers_location",
+                    "careers_sections": "careers_sections",
+                    "careers_office": "careers_office",
+                    "careers_job_listing": "careers_job_listing",
+                    "careers_job": "careers_job",
+                    "recruitment_epv": "recruitment_epv"
+                },
+                "default_value": [],
+                "layout": "horizontal",
+                "toggle": 1,
+                "return_format": "value"
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "options_page",
+                    "operator": "==",
+                    "value": "acf-options-global"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": "",
+        "modified": 1469610452,
+        "local": "json"
+    },
+    {
+        "key": "group_5800e752c009e",
+        "title": "Repeatable Blocks",
+        "fields": [
+            {
+                "key": "field_5800e7591a83c",
+                "label": "Flexible content",
+                "name": "flexible_content",
+                "type": "flexible_content",
+                "instructions": "Choose from a selection of blocks",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "button_label": "Add Flexible content",
+                "min": "",
+                "max": "",
+                "layouts": [
+                    {
+                        "key": "5800e76aa7cab",
+                        "name": "slider",
+                        "label": "Slider",
+                        "display": "block",
+                        "sub_fields": [
+                            {
+                                "key": "field_5800ed6c1a83d",
+                                "label": "Slider options",
+                                "name": "slider_options",
+                                "type": "checkbox",
+                                "instructions": "Choose what you would like to display",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "choices": {
+                                    "link": "Button Link",
+                                    "title": "Title",
+                                    "description": "Description",
+                                    "image": "Image",
+                                    "full": "Full page width slider"
+                                },
+                                "default_value": [
+                                    "link",
+                                    "title",
+                                    "description",
+                                    "image"
+                                ],
+                                "layout": "vertical",
+                                "toggle": 0,
+                                "return_format": "value"
+                            },
+                            {
+                                "key": "field_5800ee051a83e",
+                                "label": "Add new Slides",
+                                "name": "add_new_slides",
+                                "type": "repeater",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "collapsed": "",
+                                "min": "",
+                                "max": "",
+                                "layout": "table",
+                                "button_label": "Add a new slide",
+                                "sub_fields": [
+                                    {
+                                        "key": "field_5800ee111a83f",
+                                        "label": "Title",
+                                        "name": "slider_title",
+                                        "type": "text",
+                                        "instructions": "",
+                                        "required": 0,
+                                        "conditional_logic": [
+                                            [
+                                                {
+                                                    "field": "field_5800ed6c1a83d",
+                                                    "operator": "==",
+                                                    "value": "title"
+                                                }
+                                            ]
+                                        ],
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "default_value": "",
+                                        "placeholder": "",
+                                        "prepend": "",
+                                        "append": "",
+                                        "maxlength": ""
+                                    },
+                                    {
+                                        "key": "field_5800ee361a840",
+                                        "label": "Image",
+                                        "name": "slider_image",
+                                        "type": "image",
+                                        "instructions": "",
+                                        "required": 0,
+                                        "conditional_logic": [
+                                            [
+                                                {
+                                                    "field": "field_5800ed6c1a83d",
+                                                    "operator": "==",
+                                                    "value": "image"
+                                                }
+                                            ]
+                                        ],
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "return_format": "array",
+                                        "preview_size": "thumbnail",
+                                        "library": "all",
+                                        "min_width": "",
+                                        "min_height": "",
+                                        "min_size": "",
+                                        "max_width": "",
+                                        "max_height": "",
+                                        "max_size": "",
+                                        "mime_types": ""
+                                    },
+                                    {
+                                        "key": "field_5800ee4e1a841",
+                                        "label": "Description",
+                                        "name": "slider_description",
+                                        "type": "textarea",
+                                        "instructions": "Limited to 180 characters",
+                                        "required": 0,
+                                        "conditional_logic": [
+                                            [
+                                                {
+                                                    "field": "field_5800ed6c1a83d",
+                                                    "operator": "==",
+                                                    "value": "description"
+                                                }
+                                            ]
+                                        ],
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "default_value": "",
+                                        "placeholder": "",
+                                        "maxlength": "",
+                                        "rows": "",
+                                        "new_lines": "wpautop"
+                                    },
+                                    {
+                                        "key": "field_5800ee7a1a842",
+                                        "label": "Link to page\/post",
+                                        "name": "link_to_pagepost",
+                                        "type": "post_object",
+                                        "instructions": "",
+                                        "required": 0,
+                                        "conditional_logic": [
+                                            [
+                                                {
+                                                    "field": "field_5800ed6c1a83d",
+                                                    "operator": "==",
+                                                    "value": "link"
+                                                }
+                                            ]
+                                        ],
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "post_type": [],
+                                        "taxonomy": [],
+                                        "allow_null": 0,
+                                        "multiple": 0,
+                                        "return_format": "object",
+                                        "ui": 1
+                                    }
+                                ]
+                            }
+                        ],
+                        "min": "",
+                        "max": ""
+                    },
+                    {
+                        "key": "5800eeeae32e3",
+                        "name": "gallery",
+                        "label": "Gallery",
+                        "display": "block",
+                        "sub_fields": [
+                            {
+                                "key": "field_5800eef1e32e4",
+                                "label": "Gallery Images",
+                                "name": "gallery_images",
+                                "type": "gallery",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "min": "",
+                                "max": "",
+                                "insert": "append",
+                                "library": "all",
+                                "min_width": "",
+                                "min_height": "",
+                                "min_size": "",
+                                "max_width": "",
+                                "max_height": "",
+                                "max_size": "",
+                                "mime_types": ""
+                            }
+                        ],
+                        "min": "",
+                        "max": ""
+                    },
+                    {
+                        "key": "5800ef29386a4",
+                        "name": "image_on_left_text_on_right",
+                        "label": "Image and text (alternate left and right)",
+                        "display": "block",
+                        "sub_fields": [
+                            {
+                                "key": "field_5800ef7be6628",
+                                "label": "Image on left or right",
+                                "name": "image_on_left_or_right",
+                                "type": "checkbox",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "32",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "choices": {
+                                    "left": "Image on left",
+                                    "right": "Image on right"
+                                },
+                                "default_value": [],
+                                "layout": "vertical",
+                                "toggle": 0,
+                                "return_format": "value"
+                            },
+                            {
+                                "key": "field_5800ef38386a5",
+                                "label": "Image",
+                                "name": "image",
+                                "type": "image",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "32",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "return_format": "array",
+                                "preview_size": "thumbnail",
+                                "library": "all",
+                                "min_width": "",
+                                "min_height": "",
+                                "min_size": "",
+                                "max_width": "",
+                                "max_height": "",
+                                "max_size": "",
+                                "mime_types": ""
+                            },
+                            {
+                                "key": "field_5800ef49386a6",
+                                "label": "Text area",
+                                "name": "text_area",
+                                "type": "wysiwyg",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "32",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "tabs": "all",
+                                "toolbar": "basic",
+                                "media_upload": 0
+                            }
+                        ],
+                        "min": "",
+                        "max": ""
+                    }
+                ]
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "post"
+                }
+            ],
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "page"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": ""
+    },
+    {
+        "key": "group_57fe08698c9bb",
+        "title": "Site Setup",
+        "fields": [
+            {
+                "key": "field_57fe086f23683",
+                "label": "Full width or fixed",
+                "name": "full_width_or_fixed",
+                "type": "radio",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "container-full": "Full WIdth",
+                    "container": "Contained"
+                },
+                "allow_null": 0,
+                "other_choice": 0,
+                "save_other_choice": 0,
+                "default_value": "",
+                "layout": "vertical",
+                "return_format": "value"
+            },
+            {
+                "key": "field_57ff85327061c",
+                "label": "Body background colour",
+                "name": "body_background_colour",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": ""
+            },
+            {
+                "key": "field_57fe0bc4bfd65",
+                "label": "Header background colour",
+                "name": "header_background_colour",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "#282828"
+            },
+            {
+                "key": "field_57ff85187061b",
+                "label": "Header menu link colours",
+                "name": "header_menu_link_colours",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": ""
+            },
+            {
+                "key": "field_57fe0be3bfd66",
+                "label": "Footer background colour",
+                "name": "footer_background_colour",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "#282828"
+            },
+            {
+                "key": "field_57ff84ec7061a",
+                "label": "Below footer copyright background",
+                "name": "below_footer_copyright_background",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "options_page",
+                    "operator": "==",
+                    "value": "acf-options-global"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": ""
+    },
+    {
+        "key": "group_56dd879140350",
+        "title": "Social Account Options",
+        "fields": [
+            {
+                "key": "field_56dd87a55e3f1",
+                "label": "Twitter Profile",
+                "name": "twitter_profile",
+                "type": "url",
+                "instructions": "Enter your Twitter profile url. Used throughout the website.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": ""
+            },
+            {
+                "key": "field_56dd8814cc7b3",
+                "label": "Facebook Profile",
+                "name": "facebook_profile",
+                "type": "url",
+                "instructions": "Enter your Facebook profile url. Used throughout the website.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": ""
+            },
+            {
+                "key": "field_56dd8833cc7b4",
+                "label": "YouTube Profile",
+                "name": "youtube_profile",
+                "type": "url",
+                "instructions": "Enter your YouTube profile url. Used throughout the website.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": ""
+            },
+            {
+                "key": "field_56dd8858cc7b5",
+                "label": "Vimeo Profile",
+                "name": "vimeo_profile",
+                "type": "url",
+                "instructions": "Enter your Vimeo profile url. Used throughout the website.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": ""
+            },
+            {
+                "key": "field_56dd886dcc7b6",
+                "label": "Instagram Profile",
+                "name": "instagram_profile",
+                "type": "url",
+                "instructions": "Enter your Instagram profile url. Used throughout the website.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": ""
+            },
+            {
+                "key": "field_56dd8884cc7b7",
+                "label": "LinkedIn Profile",
+                "name": "linkedin_profile",
+                "type": "url",
+                "instructions": "Enter your LinkedIn profile url. Used throughout the website.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": ""
+            },
+            {
+                "key": "field_56dd889bcc7b8",
+                "label": "GooglePlus Profile",
+                "name": "googleplus_profile",
+                "type": "url",
+                "instructions": "Enter your Google+ Company Profile url. Used throughout the website.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "options_page",
+                    "operator": "==",
+                    "value": "acf-options-social"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": "",
+        "modified": 1457525860,
+        "local": "json"
+    }
+]
