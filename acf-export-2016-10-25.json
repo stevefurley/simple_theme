@@ -655,6 +655,57 @@
                         ],
                         "min": "",
                         "max": ""
+                    },
+                    {
+                        "key": "580f708a97609",
+                        "name": "include_most_recent_posts",
+                        "label": "Include most recent posts",
+                        "display": "block",
+                        "sub_fields": [
+                            {
+                                "key": "field_580f708a9760a",
+                                "label": "Display Image",
+                                "name": "display_image",
+                                "type": "checkbox",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "32",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "choices": {
+                                    "display": "Display Image",
+                                    "dont_display": "Dont display an image"
+                                },
+                                "default_value": [],
+                                "layout": "vertical",
+                                "toggle": 0,
+                                "return_format": "value"
+                            },
+                            {
+                                "key": "field_580f70fd9760d",
+                                "label": "Title of posts section",
+                                "name": "title_of_posts_section",
+                                "type": "text",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "maxlength": ""
+                            }
+                        ],
+                        "min": "",
+                        "max": ""
                     }
                 ]
             }
